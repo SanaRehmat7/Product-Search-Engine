@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="container">
+        <form>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="search-item" placeholder="Search products"
+            onkeyup="search()">
+        </form>
+
+        <div class="product-list" id="product-list">
+            <div class="product">
+                <img src="images\s1.jpg" alt="">
+                <div class="p-details">
+                    <h2>Style in Black Tshirt</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\s2.jpg" alt="">
+                <div class="p-details">
+                    <h2>Tshirt Style's</h2>
+                    <h3>$28</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\s3.jpg" alt="">
+                <div class="p-details">
+                    <h2>Tshirt For Everyone</h2>
+                    <h3>$26</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\shoe1.jpg" alt="">
+                <div class="p-details">
+                    <h2>Shoe For Runner's</h2>
+                    <h3>$29</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\shoe2.jpg" alt="">
+                <div class="p-details">
+                    <h2>Adidas Shoe</h2>
+                    <h3>$26</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images\shoe3.jpg" alt="">
+                <div class="p-details">
+                    <h2>Runner's Joggers</h2>
+                    <h3>$27</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://plus.unsplash.com/premium_photo-1678739395192-bfdd13322d34?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="p-details">
+                    <h2>Perfect Style of Bag</h2>
+                    <h3>$27</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://plus.unsplash.com/premium_photo-1680392544041-d89413b561ce?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="p-details">
+                    <h2>Bags Style</h2>
+                    <h3>$35</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://plus.unsplash.com/premium_photo-1679423807965-cf55a492e282?q=80&w=484&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <div class="p-details">
+                    <h2>Ease Travel With Coverage</h2>
+                    <h3>$30</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/file-1715652217532-464736461acbimage?w=416&dpr=2&auto=format&fit=crop&q=60" alt="">
+                <div class="p-details">
+                    <h2>Capture The Moments</h2>
+                    <h3>$65</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1491336440196-6d4fee45a05e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGFibGV8ZW58MHx8MHx8fDA%3D" alt="">
+                <div class="p-details">
+                    <h2>Perefct Laptop</h2>
+                    <h3>$85</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGlnaXRhbHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                <div class="p-details">
+                    <h2>iPhone by Apple</h2>
+                    <h3>$65</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/1498240107/photo/jeweler-cleaning-diamond-ring-with-microfiber-cloth-closeup.webp?a=1&b=1&s=612x612&w=0&k=20&c=p3h3SRaAY7kHWgac4H3zOxC-hjjEdWAMyY97n8nyoho=" alt="">
+                <div class="p-details">
+                    <h2>Dimond Ring</h2>
+                    <h3>$85</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1450297166380-cabe503887e5?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amV3ZWxyeXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                <div class="p-details">
+                    <h2>Style in Hand/Rings</h2>
+                    <h3>$35</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1522001947148-8b4dfe064edc?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8amV3ZWxyeXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                <div class="p-details">
+                    <h2>Bracelet For Women's</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
